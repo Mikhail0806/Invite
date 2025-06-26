@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Михаил и Дарья — Свадебное приглашение</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      height: 100%;
+      overflow: hidden;
+      font-family: 'Montserrat', sans-serif;
+      background: url('https://raw.githubusercontent.com/Mikhail0806/Invite/main/5397619421498964527.jpg') center 30% no-repeat;
+      background-size: 90%;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: crisp-edges;
+      image-rendering: pixelated;
+      filter: contrast(1.05) saturate(1.1);
+    }
+    .hero {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      color: #3d3d3d;
+      backdrop-filter: brightness(1.05);
+    }
+    .hero > div {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 2s ease forwards;
+    }
+    .date-top {
+      font-family: 'Montserrat';
+      font-size: 1.8rem;
+      letter-spacing: 4px;
+      margin-bottom: 20px;
+      animation-delay: 0.4s;
+    }
+    .wedding-day {
+      font-family: 'Playfair Display';
+      font-size: 3.5rem;
+      color: #b98e6c;
+      margin-bottom: 10px;
+      animation-delay: 1.0s;
+    }
+    .its-our {
+      font-style: italic;
+      font-size: 1.4rem;
+      color: #5a4b3c;
+      margin-bottom: 150px;
+      animation-delay: 1.6s;
+    }
+    .names {
+      position: absolute;
+      bottom: 40px;
+      right: 40px;
+      font-family: 'Playfair Display';
+      font-size: 1.5rem;
+      color: #6b5645;
+      animation-delay: 2.2s;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="date-top">05|09|2025</div>
+    <div class="wedding-day">Wedding Day</div>
+    <div class="its-our">it's our</div>
+    <div class="names">Михаил и Дарья</div>
+  </div>
+</body>
+</html>
